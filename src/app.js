@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const http = require('http');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
