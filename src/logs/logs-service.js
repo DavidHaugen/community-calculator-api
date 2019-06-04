@@ -9,12 +9,11 @@ const LogsService = {
       .orderBy('id', 'desc');
   },
   insertLog(db, result){
-    console.log(result);
     return db
       .insert({result})
       .into('log')
       .returning('*')
-      .then(([result]) => result);  
+      .then((result) => result);  
   },
   serializeLogs(logs) {
     return logs.map((log) => this.serializeLog(log));
@@ -22,7 +21,7 @@ const LogsService = {
   serializeLog(log) {
     return {
       id: log.id,
-      result: Number(xss(log.result)),
+      result: xss(log.result),
     };
   }
 };
