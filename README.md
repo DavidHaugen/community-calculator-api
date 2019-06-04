@@ -1,4 +1,4 @@
-## Munch Stats API
+## Community-calculator API
 + [Client Repo](https://github.com/DavidHaugen/community-calculator-client)  
 
 ### Tech Stack
