@@ -13,6 +13,9 @@
     "deploy": "git push heroku master"
   },
   "keywords": [],
+  "engines": {
+    "node": "11.10.0"
+  },
   "author": "David Haugen",
   "license": "ISC",
   "dependencies": {
