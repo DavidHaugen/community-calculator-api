@@ -9,7 +9,8 @@ const ioService = require('./ioService');
 
 const app = express();
 const server = require('http').Server(app);
-const io = require('socket.io')(server);
+const config = {pingTimeout: 60000};
+const io = require('socket.io')(server, config);
 
 function getIo() {
   return io;
