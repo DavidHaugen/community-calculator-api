@@ -13,10 +13,6 @@ const ioService = {
         logsService.insertLog(db, calculation);
         io.sockets.emit('new_calculation_blast', calculation);
       });
-      socket.on('test', function(message) {
-        // logsService.insertlog
-        io.sockets.emit('test_reply', message);
-      });
     });
   },
 
